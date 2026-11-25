@@ -126,7 +126,6 @@ Validações: nome obrigatório, stats entre 0 e 255 e no máximo 2 tipos (respo
 - Consulta por tipo e busca por nome pela API (`?type=` e `?name=`)
 - Treinadores persistidos no MongoDB, com relação aos Pokémon (`pokemonIds`)
 
-## Dupla
+## Realizadores
 
 - Miguel Xavier
-- _(nome do(a) parceiro(a) de pair programming)_
