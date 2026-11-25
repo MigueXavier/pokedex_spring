@@ -1,0 +1,152 @@
+.pokemon-card {
+  background: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-top: 8px solid #e3350d; /* faixa vermelha de Pokédex no topo */
+  border-radius: 12px;
+  padding: 16px;
+  color: #222;
+  cursor: pointer;
+  transition: transform 0.15s, border-color 0.15s;
+  
+  
+}
+.pokemon-card h1{
+  font-size: 2rem;
+}
+.pokemon-card img{
+  height: 120px;
+  width: 100%;
+  object-fit: contain;
+}
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+/* ---------- Atividade 04: busca, filtro, detalhes e formulário ---------- */
+.barra {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 16px 0;
+}
+.barra input[type='search'] {
+  flex: 1;
+  min-width: 200px;
+}
+.barra input,
+.barra select,
+.modal input,
+.modal select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font: inherit;
+  color: #222;
+  background: #fff;
+}
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #e3350d;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+button.perigo {
+  background: #7a1a05;
+}
+.pokemon-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+  text-align: left;
+}
+.tipos {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin-top: 8px;
+}
+.tipo {
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: #eee;
+  color: #222;
+  font-size: 0.8rem;
+}
+.erro {
+  color: #c0200a;
+  text-align: center;
+}
+.modal-fundo {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  z-index: 10;
+}
+.modal {
+  background: #fff;
+  color: #222;
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+  max-width: 420px;
+  max-height: 90vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+.modal h2 {
+  margin: 0;
+  color: #222;
+}
+.modal label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.9rem;
+}
+.modal-acoes {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+.detalhe-img {
+  height: 180px;
+  object-fit: contain;
+}
+.stat {
+  display: grid;
+  grid-template-columns: 130px 1fr 40px;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+.stat-barra {
+  height: 8px;
+  background: #eee;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.stat-barra div {
+  height: 100%;
+  background: #e3350d;
+}

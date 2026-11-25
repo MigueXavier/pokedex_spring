@@ -1,0 +1,4 @@
+# Copie para application-local.properties (arquivo ignorado pelo Git) e rode com:
+#   ./mvnw spring-boot:run -Dspring-boot.run.profiles=local
+spring.mongodb.uri=mongodb+srv://USUARIO:SENHA@cluster0.xxxxx.mongodb.net/pokedex?retryWrites=true&w=majority
+spring.data.mongodb.uri=mongodb+srv://USUARIO:SENHA@cluster0.xxxxx.mongodb.net/pokedex?retryWrites=true&w=majority
